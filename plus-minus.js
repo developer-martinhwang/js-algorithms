@@ -1,4 +1,4 @@
-let arr = [0, -1, -2, 3, 4]
+let arr = [-4, 3, -9, 0, 4, 1]
 const checkPlusMinus = (arr) => {
     let number = {
         sizeArray: arr.length,
@@ -25,7 +25,7 @@ const ratiosElements = (obj) => {
         proportionOfNegative: Number.parseFloat(obj.numNegative / obj.sizeArray).toFixed(6),
         proportionOfZeros: Number.parseFloat(obj.numZero / obj.sizeArray).toFixed(6),
     } 
-    return ratios.proportionOfPostive + '\n' + ratios.proportionOfNegative + '\n' + ratios.proportionOfZeros
+    return console.log(ratios.proportionOfPostive + '\n' + ratios.proportionOfNegative + '\n' + ratios.proportionOfZeros)
 }
 const number = checkPlusMinus(arr)
 
@@ -34,4 +34,4 @@ console.log('size:', number.sizeArray,'\n',
             'numNegative:', number.numNegative,'\n',
             'numZero:', number.numZero)       
 
-console.log('ratios:',ratiosElements(number))
+ratiosElements(number)
