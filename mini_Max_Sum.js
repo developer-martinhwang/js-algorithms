@@ -5,6 +5,6 @@ function sum(arr) {
     })
     const min = sum - Math.max(...arr)
     const max = sum - Math.min(...arr)
-    return min + " " + max
+    return console.log(min + " " + max)
 }
-console.log(sum([1,2,3,4,5]))
+sum([1,2,3,4,5])
