@@ -26,3 +26,9 @@ const numberLineJumps = (x1, v1, x2, v2) => {
 }
 
 console.log(numberLineJumps(0,2,5,3))
+
+let day = "Thursday"
+if(day < "Wednesday") console.log("It is before today")
+else console.log("It is after today")
+
+console.log(Boolean(day))
