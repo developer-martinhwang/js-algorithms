@@ -20,3 +20,9 @@ const breakingRecords = (scores) => {
 }
 
 breakingRecords(scores2)
+
+var num = 5.56789;
+var n = num.toFixed(2);
+var type = typeof(n)
+console.log(typeof(num10:00pm))
+console.log('type:',type)
