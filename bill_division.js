@@ -5,14 +5,18 @@ const b = 12
 function bonAppetit(bill, k, b) {
     let charged = b
     let actual = 0
-    let i = 0
-    while (i < bill.length) {
-        if(i === k) {
-            actual += 0
-        }else {
-            actual += bill[i]
-        }
-        i++
+    // let i = 0
+    // while (i < bill.length) {
+    //     if(i === k) {
+    //         actual += 0
+    //     }else {
+    //         actual += bill[i]
+    //     }
+    //     i++
+    // }
+    for (let i = 0; i < bill.length; i++) {
+        if(i === k) continue
+        actual += bill[i]
     }
     actual /= 2
     if(actual === charged) {
